@@ -7,11 +7,17 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import axios from 'axios'
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted(){
+    let url = " https://www.easy-mock.com/mock/5ea108d3af68063566222cc9/example";
+    axios.get(url).then(()=>{
+      
+    })
   }
 }
 </script>
